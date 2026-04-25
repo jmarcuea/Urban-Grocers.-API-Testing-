@@ -1,0 +1,644 @@
+Resumen,Clave de incidencia,ID de la incidencia,Tipo de Incidencia,Estado,Clave del proyecto,Nombre del proyecto,Tipo de proyecto,Responsable del proyecto,ID del responsable del proyecto,Descripción del proyecto,Prioridad,Resolución,Persona asignada,ID de la persona asignada,Informador,ID del informador,Creador,ID del creador,Creada,Actualizada,Vista por Última Vez,Resuelta,Fecha de vencimiento,Votos,Descripción,Entorno,Interesados,ID de los interesados,Estimación original,Trabajo restante estimado,Tiempo Trabajado,Relación de trabajo,Σ Estimación original,Σ Trabajo restante estimado,Σ Tiempo empleado,Nivel de Seguridad,Enlace a la incidencia interna (Cloners),Enlace de incidencia saliente (Cloners),Adjunto,Adjunto,Adjunto,Campo personalizado (Actual end),Campo personalizado (Actual start),Campo personalizado (Aprobaciones),Campo personalizado (Change reason),Campo personalizado (Change risk),Campo personalizado (Change type),Campo personalizado (Epic Color),Campo personalizado (Epic Name),Campo personalizado (Epic Status),Campo personalizado (Formularios abiertos),Campo personalizado (Formularios bloqueados),Campo personalizado (Formularios enviados),Campo personalizado (Impact),Campo personalizado (Issue color),Campo personalizado (Metas),Campo personalizado (Project overview key),Campo personalizado (Project overview status),Campo personalizado (Rank),Campo personalizado (Request Type),Campo personalizado (Sentiment),Campo personalizado (Start date),Campo personalizado (Story Points),Campo personalizado (Story point estimate),Campo personalizado (Target end),Campo personalizado (Target start),Campo personalizado (Team),Campo personalizado (Total de formularios),Campo personalizado (Vulnerability),Campo personalizado ([CHART] Date of First Response),Campo personalizado ([CHART] Time in Status),Campo personalizado (development),Campo personalizado (Áreas de enfoque),Categoría de estado,Categoría de estado cambiada
+Al meter en el id de producto en texto especial el servidor falla con mensaje 500 Internal Server Error,JMU-44,10142,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,18/04/2026 19:02,25/04/2026 11:49,25/04/2026 11:49,,,0,"Pasos
+
+# El usuario selecciona el método POST y hace una solicitud a: URL + api/v1/kits//products
+
+{
+""productsList"": [
+{
+""id"": 3,
+""quantity"": “&”
+}
+]
+}
+
+Resultado Actual 
+
+Estado de la solicitud 500 Internal Server Error
+
+Resultado Esperado
+
+El estado de la solicitud es 400 Bad Request
+
+
+
+!image-20260419-010308.png|width=542,alt=""image-20260419-010308.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,UR-23,JMU-43,18/abr/26 7:03 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260419-010308.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10158,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7e555aa1,,,,,,,,,,,,,,,0|i000a7:,,,,,,,,,,,,,,,Por hacer,18/04/2026 19:02
+Al meter en el id de producto en fracción el servidor falla con mensaje 500 Internal Server Error,JMU-43,10141,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,18/04/2026 18:57,25/04/2026 11:48,25/04/2026 11:48,,,0,"Pasos
+
+# El usuario selecciona el método POST y hace una solicitud a: URL + api/v1/kits//products
+
+{
+""productsList"": [
+{
+""id"": “&”,
+""quantity"": 3
+}
+]
+}
+
+Resultado Actual 
+
+Estado de la solicitud 500 Internal Server Error
+
+Resultado Esperado
+
+El estado de la solicitud es 400 Bad Request
+
+
+
+!image-20260419-005352.png|width=546,alt=""image-20260419-005352.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,JMU-44,JMU-42,18/abr/26 6:57 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260419-005352.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10156,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@f5d8a81,,,,,,,,,,,,,,,0|i0009z:,,,,,,,,,,,,,,,Por hacer,18/04/2026 18:57
+"Al meter en una cantidad de producto negativo, el servidor manda 200 ok y la lista de productos",JMU-42,10140,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,18/04/2026 18:53,25/04/2026 11:48,25/04/2026 11:48,,,0,"Pasos
+
+# El usuario selecciona el método POST y hace una solicitud a: URL + api/v1/kits//products
+
+{
+""productsList"": [
+{
+""id"": &,
+""quantity"": 3
+}
+]
+}
+
+Resultado Actual 
+
+Estado de la solicitud 500 Internal Server Error
+
+Resultado Esperado
+
+El estado de la solicitud es 400 Bad Request
+
+
+
+!image-20260419-005352.png|width=546,alt=""image-20260419-005352.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,JMU-43,,18/abr/26 6:55 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260419-005352.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10155,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@59e7588b,,,,,,,,,,,,,,,0|i0009r:,,,,,,,,,,,,,,,Por hacer,18/04/2026 18:53
+Al llenar mal el campo id del cuerpo se despliega la lista de productos con un estado de solicitud de 200 ok,JMU-41,10139,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,18/04/2026 18:49,25/04/2026 11:47,25/04/2026 11:47,,,0,"Pasos
+
+El usuario selecciona el método POST y hace una solicitud a: URL + api/v1/kits/2/products
+
+{
+  ""productsList"": [
+    {
+      ""id"": -1,
+      ""quantity"": 3
+    }
+  ]
+}
+
+Resultado Actual
+
+El estado de la solicitud es 200 ok y se despliega la lista de productos
+
+Resultado Esperado
+
+El estado de la solicitud es 404 Not Found
+
+!image-20260419-004940.png|width=543,alt=""image-20260419-004940.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,18/abr/26 6:52 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260419-004940.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10154,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2bacb37b,,,,,,,,,,,,,,,0|i0009j:,,,,,,,,,,,,,,,Por hacer,18/04/2026 18:49
+"Al ingresar un id en URL en kit products, el servidor saca estado de error 502 Bad Gateway",JMU-46,10138,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,18/04/2026 18:33,25/04/2026 11:50,25/04/2026 11:50,,,0,"Pasos
+
+El usuario selecciona el método POST y hace una solicitud a: URL + api/v1/kits/3.4/products
+
+{
+  ""productsList"": [
+    {
+      ""id"": 3,
+      ""quantity"": 3
+    }
+  ]
+}
+
+Resultado Actual
+
+El estado de la solicitud es502 
+Bad Gateway 
+382 ms 
+350 B 
+123456789101112131415 
+<html><head> <title>502 Bad Gateway</title></head><body> <center> <h1>502 Bad Gateway</h1> </center> <hr> <center>nginx/1.18.0</center></body>
+
+Resultado Esperado
+
+El estado de la solicitud es 404 Not Found
+
+!image-20260419-003356.png|width=551,alt=""image-20260419-003356.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,18/abr/26 6:41 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260419-003356.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10153,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@6edd3b9d,,,,,,,,,,,,,,,0|i0009b:,,,,,,,,,,,,,,,Por hacer,18/04/2026 18:33
+"Agregar una hora en letras especiales en Order to go, agrega el pedido sin marcar error",JMU-40,10137,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,17/04/2026 15:36,25/04/2026 11:47,25/04/2026 11:47,,,0,"Pasos
+
+# El usuario selecciona el método POST y hace una solicitud a: URL + /order-and-go/v1/delivery
+
+con el cuerpo
+
+{
+""deliveryTime"": ""%"", 
+""productsCount"": 1,
+""productsWeight"": 1
+}
+
+Respuesta Actual
+
+El estado de la solicitud es 200 OK{
+""name"": ""Order and Go"",
+""isItPossibleToDeliver"": true,
+""hostDeliveryCost"": 3,
+""toBeDeliveredTime"": {
+""min"": 20,
+""max"": 25
+},
+""clientDeliveryCost"": 0
+}
+
+Respuesta Esperada
+
+Estado de la solicitud 400 Bad Request
+
+!image-20260417-213819.png|width=600,alt=""image-20260417-213819.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,17/abr/26 3:38 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260417-213819.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10152,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@864a786,,,,,,,,,,,,,,,0|i00093:,,,,,,,,,,,,,,,Por hacer,17/04/2026 15:36
+Al quitar uno de los elementos obligatorios para hacer un pedido en Order to go sigue haciendo el pedido,JMU-37,10136,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,17/04/2026 15:26,25/04/2026 11:45,25/04/2026 11:45,,,0,"Pasos
+
+# El usuario selecciona el método POST y hace una solicitud a: URL + /order-and-go/v1/delivery
+
+con el cuerpo
+
+{
+""deliveryTime"": 8,   
+""productsWeight"": 1
+}
+
+Respuesta Actual
+
+El estado de la solicitud es 200 OK{
+""name"": ""Order and Go"",
+""isItPossibleToDeliver"": true,
+""hostDeliveryCost"": 3,
+""toBeDeliveredTime"": {
+""min"": 20,
+""max"": 25
+},
+""clientDeliveryCost"": 0
+}
+
+
+Respuesta Esperada
+
+Estado de la solicitud 400 Bad Request
+
+
+!image-20260417-212733.png|width=536,alt=""image-20260417-212733.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,17/abr/26 3:27 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260417-212733.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10151,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@82a5d3e,,,,,,,,,,,,,,,0|i0008v:,,,,,,,,,,,,,,,Por hacer,17/04/2026 15:26
+"Agrego una hora en letras latinas en Order to go, me permite hacer el pedido",JMU-38,10135,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,17/04/2026 15:17,25/04/2026 11:46,25/04/2026 11:46,,,0,"Pasos
+
+# El usuario selecciona el método POST y hace una solicitud a: URL + /order-and-go/v1/delivery
+
+con el cuerpo
+
+{
+""deliveryTime"": ""ocho"",     
+""productsCount"": 1,
+""productsWeight"": 1
+}
+
+Respuesta Actual
+
+El estado de la solicitud es 200 OK{
+""name"": ""Order and Go"",
+""isItPossibleToDeliver"": true,
+""hostDeliveryCost"": 3,
+""toBeDeliveredTime"": {
+""min"": 20,
+""max"": 25
+},
+""clientDeliveryCost"": 0
+}
+
+
+Respuesta Esperada
+
+Estado de la solicitud 400 Bad Request
+
+!image-20260417-211859.png|width=544,alt=""image-20260417-211859.png""!
+
+!image-20260417-212214.png|width=556,alt=""image-20260417-212214.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,17/abr/26 3:19 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260417-211859.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10149,17/abr/26 3:25 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260417-212214.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10150,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1095a23a,,,,,,,,,,,,,,,0|i0008n:,,,,,,,,,,,,,,,Por hacer,17/04/2026 15:17
+"Al ingresar un pedido a las 7horas, se acepta la solicitud del pedido en Order to go",JMU-36,10134,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,17/04/2026 15:12,25/04/2026 11:45,25/04/2026 11:49,,,0,"Pasos
+
+ El usuario selecciona el método POST y hace una solicitud a: URL + /order-and-go/v1/delivery
+
+con el cuerpo
+
+{
+""deliveryTime"": 7,
+""productsCount"": 1,
+""productsWeight"": 1
+}
+
+Resultado Actual
+
+Estado de la solicitud 200 OK, ""message"" : ""isItPossibleToDeliver"" = false
+
+Resultado Esperado
+
+* El estado de la solicitud es 200 OK""
+{noformat}{
+    ""name"": ""Order and Go"",
+    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""toBeDeliveredTime"": {
+        ""min"": 20,
+        ""max"": 25
+    },
+    ""clientDeliveryCost"": 5
+{noformat}
+
+!image-20260417-211419.png|width=533,alt=""image-20260417-211419.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,17/abr/26 3:14 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260417-211419.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10148,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@73ba3a02,,,,,,,,,,,,,,,0|i0008f:,,,,,,,,,,,,,,,Por hacer,17/04/2026 15:12
+"Al ingresar un horario de pedido a las 23horas, sigue aceptando el pedido en Order to go",JMU-34,10133,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,17/04/2026 15:04,25/04/2026 11:44,25/04/2026 11:44,,,0,"Pasos
+
+ El usuario selecciona el método POST y hace una solicitud a: URL + /order-and-go/v1/delivery 
+
+con el cuerpo
+
+{
+""deliveryTime"": 23,
+""productsCount"": 1,
+""productsWeight"": 1
+}
+
+Resultado Actual
+
+Estado de la solicitud 200 OK, ""message"" : ""isItPossibleToDeliver"" = false
+
+Resultado Esperado
+
+* El estado de la solicitud es 200 OK"" 
+{code:json}{
+    ""name"": ""Order and Go"",
+    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""toBeDeliveredTime"": {
+        ""min"": 20,
+        ""max"": 25
+    },
+    ""clientDeliveryCost"": 5
+}{code}
+
+!image-20260417-210643.png|width=559,alt=""image-20260417-210643.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,17/abr/26 3:06 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260417-210643.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10147,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4fc40482,,,,,,,,,,,,,,,0|i00087:,,,,,,,,,,,,,,,Por hacer,17/04/2026 15:04
+La tarifa por exceso de peso o productos de Order to go aparece como 5 usd,JMU-47,10132,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,17/04/2026 14:57,25/04/2026 11:51,25/04/2026 11:51,,,0,"Pasos
+
+ El usuario selecciona el método POST y hace una solicitud a: URL + /order-and-go/v1/delivery 
+
+con el cuerpo
+
+{
+""deliveryTime"": 8,
+""productsCount"": 16,
+""productsWeight"": 1
+}
+
+Resultado Actual
+
+El estado de la solicitud 200k
+
+""hostDeliveryCost"": 5,
+""clientDeliveryCost"": 5
+
+Resultado Esperado
+
+Se añade un pedido con el cuerpo
+""clientDeliveryCost"": 9, 
+""hostDeliveryCost"": 5, 
+
+* El estado de la solicitud es 200 OK""
+
+!image-20260417-205821.png|width=538,alt=""image-20260417-205821.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,17/abr/26 3:00 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260417-205821.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10146,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5990147a,,,,,,,,,,,,,,,0|i0007z:,,,,,,,,,,,,,,,Por hacer,17/04/2026 14:57
+"Al crear un pedido de 7kg en Orden to go, la tarifa de cliente se actualiza a 5",JMU-33,10131,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,17/04/2026 14:39,25/04/2026 11:43,25/04/2026 11:43,,,0,"*Pasos*
+
+# El usuario selecciona el método POST y hace una solicitud a: URL + /order-and-go/v1/delivery 
+
+con el cuerpo 
+
+{
+""deliveryTime"": 8,
+""productsCount"": 15,
+""productsWeight"": 7
+}
+
+*Resultado Actual*
+
+El estado de la solicitud 200k{
+""name"": ""Order and Go"",
+""isItPossibleToDeliver"": true,
+""hostDeliveryCost"": 5,
+""toBeDeliveredTime"": {
+""min"": 20,
+""max"": 25
+},
+""clientDeliveryCost"": 5
+}
+
+*Resultado Esperado*
+
+Se añade un pedido con el cuerpo
+{
+""name"": ""Order and Go"", /
+""clientDeliveryCost"": 0, 
+""toBeDeliveredTime"": { 
+""min"": ..., ""max"": ... }, 
+""hostDeliveryCost"": 5, 
+""isItPossibleToDeliver"": true }
+
+* El estado de la solicitud es 200 OK""
+
+!image-20260417-204008.png|width=537,alt=""image-20260417-204008.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,17/abr/26 2:44 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260417-204008.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10145,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2353d8d0,,,,,,,,,,,,,,,0|i0007r:,,,,,,,,,,,,,,,Por hacer,17/04/2026 14:39
+"Al ingresar un pedido de 3.1kg en Order to go, no se muestra la tarifa correspondiente 5 usd",JMU-35,10130,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,17/04/2026 14:27,25/04/2026 11:44,25/04/2026 11:44,,,0,"*Pasos*
+
+ El usuario selecciona el método POST y hace una solicitud a: URL + /order-and-go/v1/delivery
+
+Se añade un pedido con el cuerpo
+{
+""deliveryTime"": 8,
+""productsCount"": 1,
+""productsWeight"": 3.2
+}
+
+*Resultado Actual*
+
+El estado del seguimiento 200 OK
+
+{
+""name"": ""Order and Go"",
+""isItPossibleToDeliver"": true,
+""hostDeliveryCost"": 3,
+""toBeDeliveredTime"": {
+""min"": 20,
+""max"": 25
+},
+""clientDeliveryCost"": 0
+}
+
+*Resultado Esperado*
+
+El estado 200 ok
+
+Se añade un pedido con el cuerpo
+{
+""name"": ""Order and Go"", /
+""clientDeliveryCost"": 0, 
+""toBeDeliveredTime"": { 
+""min"": ..., ""max"": ... }, 
+""hostDeliveryCost"": 5, 
+""isItPossibleToDeliver"": true }
+
+* El estado de la solicitud es 200 OK""
+
+!image-20260417-202755.png|width=546,alt=""image-20260417-202755.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,17/abr/26 2:32 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260417-202755.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10144,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@365eac52,,,,,,,,,,,,,,,0|i0007j:,,,,,,,,,,,,,,,Por hacer,17/04/2026 14:27
+Al agregar dos id de producto (elemento duplicado) no se genera mensaje de error y se agragan las cantidades en ambos kits,JMU-45,10129,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,15/04/2026 22:56,25/04/2026 11:50,25/04/2026 11:50,,,0,"Pasos
+
+El usuario selecciona el método POST y hace una solicitud a: URL + api/v1/kits/:id/products
+
+Path params: id= 2
+
+{
+  ""productsList"": [
+    {
+      ""id"": 1,  ""id"": 2,
+      ""quantity"": 2
+    }
+  ]
+}
+
+Resultado Actual
+
+El estado es 200 ok y la cantidad de quantity se agrega en ambos productos id
+
+Resultado Esperado
+
+El estado de la solicitud es 400 Bad Request
+
+!image-20260416-045715.png|width=545,alt=""image-20260416-045715.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,15/abr/26 10:59 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260416-045715.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10142,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@c59660d,,,,,,,,,,,,,,,0|i0007b:,,,,,,,,,,,,,,,Por hacer,15/04/2026 22:56
+Agregar de forma duplicada quantity en un mismo kit genera un estado 200 ok y no modifica nada,JMU-32,10128,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,15/04/2026 22:50,25/04/2026 11:42,25/04/2026 11:42,,,0,"Pasos
+
+# El usuario selecciona el método POST y hace una solicitud a: URL + api/v1/kits/:id/products
+
+{
+  ""productsList"": [
+    {
+      ""id"": 1,
+      ""quantity"": 2, ""quantity"": 2
+    }
+  ]
+}
+
+Resultado asctual
+
+El estado de la solicitud es 400 Bad Request
+
+Resultado esperado
+
+El estado es 200 ok, no se agrega nada al kit seleccionado
+
+!image-20260416-045128.png|width=548,alt=""image-20260416-045128.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,15/abr/26 10:52 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260416-045128.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10141,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5e1203ad,,,,,,,,,,,,,,,0|i00073:,,,,,,,,,,,,,,,Por hacer,15/04/2026 22:50
+Agregar un id de producto en letras latinas genera un mensaje 500 Internal Server Error,JMU-39,10127,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,15/04/2026 22:36,25/04/2026 11:46,25/04/2026 11:46,,,0,"Pasos
+
+El usuario selecciona el método POST y hace una solicitud a: URL + api/v1/kits/:id/products
+
+Path params: id= 1
+
+{
+  ""productsList"": [
+    {
+      ""id"": ""uno"",
+      ""quantity"": 2
+    }
+  ]
+}
+
+Resultado Actual
+
+El código 500 Internal Server Error
+
+Resultado Esperado
+
+El estado de la solicitud es 400 Bad Request
+
+!image-20260416-043733.png|width=545,alt=""image-20260416-043733.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,15/abr/26 10:39 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260416-043733.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10140,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3487baa2,,,,,,,,,,,,,,,0|i0006v:,,,,,,,,,,,,,,,Por hacer,15/04/2026 22:36
+Cuando se agrega una cantidad sin especificar el id del producto se crea un producto sin registro id,JMU-31,10126,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,15/04/2026 22:31,25/04/2026 11:41,25/04/2026 11:41,,,0,"Pasos
+
+# El usuario selecciona el método POST y hace una solicitud a: URL + api/v1/kits/:id/products
+# {
+  ""productsList"": [
+    {
+{noformat}  ""quantity"": 3
+}{noformat}
+  ]
+}
+
+Respuesta actual
+
+Agregar un producto sin id con quantity de 3
+
+Respuesta esperada
+
+El estado de la solicitud es 400 Bad Request
+
+!image-20260416-050606.png|width=546,alt=""image-20260416-050606.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,15/abr/26 11:06 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260416-050606.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10143,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@12b97089,,,,,,,,,,,,,,,0|i0006n:,,,,,,,,,,,,,,,Por hacer,15/04/2026 22:31
+"Al agregar un id Kit en Endpoint con letras ""uno"" arroja mensaje 500 Internal Server Error",JMU-30,10125,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,15/04/2026 22:23,25/04/2026 11:40,25/04/2026 11:40,,,0,"Pasos
+
+# El usuario selecciona el método POST y hace una solicitud a: URL + api/v1/kits/:id/products
+#  Path params: id= ""uno""
+{
+  ""productsList"": [
+    {
+      ""id"": 1,
+      ""quantity"": 2
+    }
+  ]
+}
+
+Resultado actual
+
+Estado de la respuesta 500 Internal Server Error
+
+Resultado esperado
+
+El estado de la solicitud es 404 Not Found
+
+!image-20260416-042352.png|width=538,alt=""image-20260416-042352.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,15/abr/26 10:25 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260416-042352.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10139,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@46eb2125,,,,,,,,,,,,,,,0|i0006f:,,,,,,,,,,,,,,,Por hacer,15/04/2026 22:23
+Al agregar productos de Kit sin información en productList no sale el error 400 Bad Request,JMU-26,10124,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,15/04/2026 22:08,25/04/2026 11:35,25/04/2026 11:35,,,0,"Pasos
+
+El usuario selecciona el método POST y hace una solicitud a: URL + api/v1/kits/2/products {
+  ""productsList"": [
+
+  ]
+}
+
+Resultado actual
+
+El estado de la solicitud es 200 OK y sale la lista completa de los productos
+
+Resultado esperado
+
+El estado de la solicitud sea 400 Bad Request
+
+!image-20260416-041446.png|width=562,alt=""image-20260416-041446.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,15/abr/26 10:17 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260416-041446.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10138,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3a5020bb,,,,,,,,,,,,,,,0|i00067:,,,,,,,,,,,,,,,Por hacer,15/04/2026 22:08
+"Al agregar un kit sin el campo quantity, la respuesta del servidor es 500 Intern Server Error",JMU-29,10123,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,15/04/2026 21:26,25/04/2026 11:39,25/04/2026 11:40,,,0,"Pasos
+
+# El usuario selecciona el método POST y hace una solicitud a: URL + api/v1/kits/2/products con el cuerpo {
+  ""productsList"": [
+    {
+      ""id"": 1
+     
+    }
+  ]
+}
+
+Resultado actual
+
+El error 500 Interbal Server Error. ""message"": ""invalid input syntax for type integer: \""NaN\""""
+
+Resultado esperado
+
+El estado de la solicitud es 400 Bad Request
+
+!image-20260416-032704.png|width=560,alt=""image-20260416-032704.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,15/abr/26 9:54 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260416-032704.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10137,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1ab706aa,,,,,,,,,,,,,,,0|i0005z:,,,,,,,,,,,,,,,Por hacer,15/04/2026 21:26
+Al agregar un kit con id 1000 (inexistente) la respuesta del servidor es darme la lista completa del kit,JMU-28,10122,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,15/04/2026 21:12,25/04/2026 11:39,25/04/2026 11:39,,,0,"Pasos
+
+# El usuario selecciona el método POST y hace una solicitud a: URL + api/v1/kits/2/products con el cuerpo {
+  ""productsList"": [
+    {
+      ""id"": 1000,
+      ""quantity"": 3
+    }
+  ]
+}
+
+Resultado Actual
+
+Estado 200 ok con respuesta: El estado de la solicitud es 200 OK y saca la lista de {
+""id"": 2,
+""name"": ""Para películas y series"",
+""productsList"": [
+{
+""id"": 7,
+""name"": ""Papas fritas: Saladas Clásicas"",
+""price"": 2,
+""weight"": 150,
+""units"": ""g"",
+""quantity"": 1
+},
+{... }
+],
+""productsCount"": 32
+}
+
+Respuesta esperada
+
+El estado de la solicitud es 400 Bad Request
+
+!image-20260416-031523.png|width=545,alt=""image-20260416-031523.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,15/abr/26 9:15 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260416-031523.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10135,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4103f5b7,,,,,,,,,,,,,,,0|i0005r:,,,,,,,,,,,,,,,Por hacer,15/04/2026 21:12
+"Al agregar un producto a un kit con id letras ""dos"" la respuesta del servidor es un 500 Internal Server Error",JMU-27,10121,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,15/04/2026 20:23,25/04/2026 11:38,25/04/2026 11:38,,,0,"Pasos
+
+1 Enviar una solicitud POST a /URL + api/v1/kits/2/products con el siguiente cuerpo: 
+
+{noformat}Path params: id= 2
+
+{
+  ""productsList"": [
+    {
+      ""id"": ""tres"",
+      ""quantity"": 3
+    }
+  ]
+}{noformat}
+
+Resultado actual
+
+La API devuelve 500 Internal Server Error debido a que ID está fuera del rango workingHours (30)
+
+Resultado esperado
+
+La API devuelve 400 Bad Request.
+
+!image-20260416-025008.png|width=534,alt=""image-20260416-025008.png""!",,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,15/abr/26 9:16 PM;63febf6b-b525-4a7d-b446-e7630298f01c;image-20260416-025008.png;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10136,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@21016031,,,,,,,,,,,,,,,0|i0005j:,,,,,,,,,,,,,,,Por hacer,15/04/2026 20:23
+"El temporizador al finalizar los 10 minutos de tolerancia en el panel automóvil reservado, no inicia el tiempo de uso compartido del vehículo",JMU-25,10088,Error,Tareas por hacer,JMU,Jacqueline Marcue UrbanRoutes,software,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,Medium,,,,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,03/04/2026 18:06,03/04/2026 18:14,06/04/2026 16:54,,,0,"Pasos para Reproducir el error
+
+1 Abrir Urban Routes
+
+2 Ingresar una dirección en el campo desde “East 2nd street, 601”
+
+3 Ingresar una dirección en el campo hasta “1300 1st st”
+
+4 Selecciónar botón “Pedir taxi”
+
+5 Seleccionar el Modo de Transporte “Personal”
+
+6 Seleccionar el tipo de transporte “Automóvil compartido”
+
+ 7Hacer clic en el botón “Reservar”
+
+8 Seleccionar una tarifa
+
+9 Ingresar una Licencia de Conducir válida
+
+10 Pedir reservar un automóvil
+
+Resultado Actual: El temporizador de 10 minutos al terminar se queda en 00:01
+
+Resultado esperado:   Inicie el tiempo de vehiculo comparitdo",Navegador: Google Chrome Versión 146.0.7680.178 (Build oficial) (64 bits) 800 x 600 pixceles,Jacqueline Marcué,712020:b4adee91-ba6a-4136-9e5f-fd90cee56a0a,,,,,,,,,,,03/abr/26 6:14 PM;63febf6b-b525-4a7d-b446-e7630298f01c;Grabación de pantalla 2026-04-03 181350.mp4;https://jmarcueas3urban.atlassian.net/rest/api/3/attachment/content/10102,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@20246389,,,,,,,,,,,,,,,0|i0005b:,,,,,,,,,,,,,,,Por hacer,03/04/2026 18:06
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
